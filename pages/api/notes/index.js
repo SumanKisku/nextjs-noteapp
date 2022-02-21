@@ -4,7 +4,14 @@ import Note from '../../../models/Note'
 dbConnect();
 
 export default async (req, res) => {
+   // Testing what are req and res actually.
+    console.log(req);
+    console.log(res);
     const { method } = req;
+
+   // What is method here
+    console.log(method);
+
 
     switch (method) {
         case 'GET':
